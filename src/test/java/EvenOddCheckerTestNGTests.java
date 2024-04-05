@@ -1,18 +1,18 @@
 import org.testng.annotations.*;
 import java.lang.reflect.Method;
-import static org.testng.AssertJUnit.*;
+import org.testng.Assert;
 
 public class EvenOddCheckerTestNGTests {
 
   @Test
   public void testEvenChecker() {
-    assertTrue("Not an even", (EvenOddChecker.check(10)));
+    Assert.assertTrue((EvenOddChecker.check(10)), "Not an even");
     System.out.println("Passed");
   }
 
   @Test
   public void testOddChecker() {
-    assertFalse("Not an odd", (EvenOddChecker.check(5)));
+    Assert.assertFalse((EvenOddChecker.check(5)), "Not an odd");
     System.out.println("Passed");
   }
 

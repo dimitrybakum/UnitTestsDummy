@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite TestNG">
+    <test name="CalculatorTest">
+        <classes>
+            <class name="CalculatorTestNGTests"/>
+        </classes>
+    </test>
+    <test name="EvenOddCheckerTest">
+        <classes>
+            <class name="EvenOddCheckerTestNGTests"/>
+        </classes>
+    </test>
+    <test name="RectangleTest">
+        <classes>
+            <class name="RectangleTestNGTests"/>
+        </classes>
+    </test>
+</suite>

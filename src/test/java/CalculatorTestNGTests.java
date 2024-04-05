@@ -1,6 +1,6 @@
 import org.testng.annotations.*;
 import java.lang.reflect.Method;
-import static org.testng.AssertJUnit.*;
+import org.testng.Assert;
 
 public class CalculatorTestNGTests {
 
@@ -8,25 +8,25 @@ public class CalculatorTestNGTests {
 
   @Test
   public void testCalculatorSum() {
-    assertEquals("The sum result is wrong", calculator.add(10, 5), 15);
+    Assert.assertEquals(calculator.add(10, 5), 15, "The sum result is wrong" );
     System.out.println("Passed");
   }
 
   @Test
   public void testCalculatorSubtract() {
-    assertEquals("The subtract result is wrong", 10, calculator.subtract(15, 5));
+    Assert.assertEquals(calculator.subtract(15, 5), 10, "The subtract result is wrong");
     System.out.println("Passed");
   }
 
   @Test
   public void testCalculatorMultiply() {
-    assertEquals("The multiply result is wrong", 20, calculator.multiply(5, 4));
+    Assert.assertEquals(calculator.multiply(5, 4), 20, "The multiply result is wrong");
     System.out.println("Passed");
   }
 
   @Test
   public void testCalculatorDivide() {
-    assertEquals("The divide result is wrong", 3, calculator.divide(18, 6));
+    Assert.assertEquals(calculator.divide(18, 6), 3, "The divide result is wrong");
     System.out.println("Passed");
   }
 
